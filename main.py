@@ -23,7 +23,7 @@ def get_weather():
   return weather['weather'], math.floor(weather['temp'])
 
 def get_date():
-  delta = today - datetime.strptime(start_date, "%Y-%m-%d")
+  delta = today - datetime.
   return delta.days
 
 
