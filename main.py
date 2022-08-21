@@ -6,7 +6,7 @@ import requests
 import os
 import random
 
-today = datetime.now()
+date = datetime.now()
 city = os.environ['CITY']
 
 app_id = os.environ["APP_ID"]
@@ -22,8 +22,8 @@ def get_weather():
   weather = res['data']['list'][0]
   return weather['weather'], math.floor(weather['temp'])
 
-def get_date():
-  delta = today - datetime.
+def get_count():
+  delta = today - datetime
   return delta.days
 
 
