@@ -22,7 +22,7 @@ def get_weather():
   weather = res['data']['list'][0]
   return weather['weather'], math.floor(weather['temp'])
 
-def get_count():
+def get_date():
   delta = today - datetime
   return delta.days
 
@@ -34,7 +34,7 @@ def get_words():
   return words.json()['data']['text']
 
 def get_random_color():
-  return "#%06x" % random.randint(0, 0xFFFFFF)
+  return "#%06x" % random.randint(0, pink)
 
 
 client = WeChatClient(app_id, app_secret)
